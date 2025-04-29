@@ -53,7 +53,7 @@ function HeroSection() {
       <br />
       <div className="flex flex-row text-white justify-center gap-5">
         <a href="#projects"><ShimmerButton className="text-white">Explore My Work</ShimmerButton></a>
-        <InteractiveHoverButton className="hover:bg-white hover:text-black text-white">Let's Connect</InteractiveHoverButton>
+        <a href="#contact"><InteractiveHoverButton className="hover:bg-white hover:text-black text-white">Let's Connect</InteractiveHoverButton></a>
       </div>
       <br />
       <br />

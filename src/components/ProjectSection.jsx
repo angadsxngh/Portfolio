@@ -11,7 +11,7 @@ function ProjectSection() {
       <div className="">
         <AuroraText className="text-xl pb-4">Real World Results</AuroraText>
       </div>
-      <div className="pb-20">
+      <div className="pb-20"> 
         <HyperText>PROJECTS</HyperText>
         <h1 className="text-xl font-semibold">
           Check out how I transformed ideas into engaging experiences
