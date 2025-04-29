@@ -1,58 +1,40 @@
 import React from "react";
-import { BentoGrid, BentoCard } from "./magicui/bento-grid";
 import { AuroraText } from "./magicui/aurora-text";
 import { Image } from "@heroui/image";
+import { TypingAnimation } from "./magicui/typing-animation";
 
 function AboutSection() {
-  const features = [
-    {
-      Icon: "FileTextIcon",
-      name: "Save your files",
-      description: "We automatically save your files as you type.",
-      href: "/",
-      cta: "Learn more",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className:
-        "lg:row-start-1 lg:row-end-4 bg-white lg:col-start-2 lg:col-end-3",
-    },
-    {
-      Icon: "InputIcon",
-      name: "Full text search",
-      description: "Search through all your files in one place.",
-      href: "/",
-      cta: "Learn more",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className:
-        "lg:col-start-1 lg:col-end-2 bg-white lg:row-start-1 lg:row-end-3",
-    },
-    {
-      Icon: "GlobeIcon",
-      name: "Multilingual",
-      description: "Supports 100+ languages and counting.",
-      href: "/",
-      cta: "Learn more",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className:
-        "lg:col-start-1 lg:col-end-2 bg-white lg:row-start-3 lg:row-end-4",
-    },
-    {
-      Icon: "CalendarIcon",
-      name: "Calendar",
-      description: "Use the calendar to filter your files by date.",
-      href: "/",
-      cta: "Learn more",
-      background: <img className="absolute -right-20 -top-20 opacity-60" />,
-      className:
-        "lg:col-start-3 lg:col-end-3 bg-white lg:row-start-1 lg:row-end-2",
-    },
+  const slugs = [
+    "javascript",
+    "typescript",
+    "nextjs",
+    "express",
+    "nodejs",
+    "mongodb",
+    "react",
+    "mysql",
+    "postgresql",
+    "prisma",
+    "cpp",
+    "java",
+    "tailwind",
+    "git",
+    "github",
+    "vscode",
+    "html",
+    "css",
+    "wordpress",
+    "appwrite",
+    "firebase",
   ];
+
   return (
     <div
       id="about"
       className="min-h-screen py-40 px-32 bg-black text-center  justify-center text-white"
     >
       <div className="flex flex-col justify-center items-center py-8">
-        <AuroraText>A GLIMPSE INTO MY WORLD</AuroraText>
+        <AuroraText className='text-xl'>A GLIMPSE INTO MY WORLD</AuroraText>
         <br />
         <br />
         <h1 className="text-4xl font-bold">About Me</h1>
@@ -61,18 +43,44 @@ function AboutSection() {
           Learn more about who I am, what I do, and what inspires me
         </h1>
       </div>
-      <div className="grid gird-cols-4">
-        <div className="bg-white col-span-3">
-          <h1>hello</h1>
+      <div className="">
+        <h1 className="text-left mx-28 text-xl">
+          👋 Hello, world! I am Angad, a Full-stack engineer from Delhi-NCR,
+          India. I love to design and code 👨🏼‍💻. I build high-quality applications
+          for the web. I concentrate on writing clean, understandable and
+          testable code. 
+        </h1>
+        <h1 className="pt-2 text-left mx-28 text-xl">
+          Currently, I'm pursuing my undergrads 👨‍🎓 in Computer
+          Science Engineering at DIT University, Dehradun.
+          I love working in and as a team. I'm always looking for opportunities
+          to learn and grow.
+        </h1>
+        <h1 className="pt-2 text-left mx-28 text-xl pb-8">
+          When I’m not programming, I focus on my hobbies
+          which are: Basketball🏀, Movies🎬 and F1🏎️.
+        </h1>
+      </div>
+      <div className="grid  text-black grid-cols-4 py-5 gap-4 mx-28 ">
+        <div className="bg-[#191919] text-white font-semibold text-lg  col-span-3 row-span-1 rounded-xl border-l-2 border-r-2 border-b-2 border-white">
+          <div className="bg-black text-white py-4 border-t-2 border-white rounded-t-xl shadow shadow-cyan-300">
+            <TypingAnimation className="">My Playground</TypingAnimation>
+          </div>
+          <div className="grid grid-cols-7 mx-4 items-center text-center pt-4 justify-center">
+            {slugs.map((slug) => (
+              <Image
+                src={`https://skillicons.dev/icons?i=${slug}`}
+                className="pb-6 ml-5"
+              />
+            ))}
+          </div>
         </div>
-        <div className="">
-          <Image
-            alt="HeroUI hero Image"
-            src="https://heroui.com/images/hero-card-complete.jpeg"
-            width={300}
-          />
-        </div>
-        <div className=""></div>
+        <Image
+          className="row-span-2"
+          alt="HeroUI hero Image"
+          src="https://raw.githubusercontent.com/angadsxngh/Portfolio/refs/heads/master/public/images/avatarMap.jpg"
+          width={300}
+        />
       </div>
     </div>
   );

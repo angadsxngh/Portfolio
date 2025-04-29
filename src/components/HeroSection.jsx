@@ -4,12 +4,14 @@ import { AuroraText } from "./magicui/aurora-text";
 import { WordRotate } from "./magicui/word-rotate";
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 import { ShimmerButton } from "./magicui/shimmer-button";
+import { RetroGrid } from "./magicui/retro-grid";
 
 function HeroSection() {
   
   return (
     <div className="">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center px-6 py-10 pt-32">
+      <RetroGrid />
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center px-6 py-10 pt-32 ">
         {/* Left column: Text */}
         <div className="flex flex-col gap-4">
           <div className="flex flex-col items-center md:items-center text-center md:text-left pt-10">
@@ -56,6 +58,7 @@ function HeroSection() {
       <br />
       <br />
       <br />
+      
     </div>
   );
 }

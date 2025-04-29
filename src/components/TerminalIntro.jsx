@@ -2,7 +2,7 @@ import { AnimatedSpan, Terminal, TypingAnimation } from "./magicui/terminal";
 
 export default function TerminalIntro() {
   return (
-    <Terminal className="h-80">
+    <Terminal className="h-80 bg-black">
       <TypingAnimation className='text-white'>&gt; npm create-angad@latest init</TypingAnimation>
 
       <AnimatedSpan delay={1500} className="text-green-500">
