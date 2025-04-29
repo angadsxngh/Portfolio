@@ -7,7 +7,7 @@ function Header() {
       <div className="flex justify-between items-center py-6 px-6 relative">
         
         <div className="z-10">
-          <img src="/logo.png" alt="LOGO" className="h-8 w-auto" />
+          <img src="/images/HeaderLogo" alt="LOGO" className="h-8 w-auto" />
         </div>
 
         <div className="absolute mb-3 left-1/2 transform -translate-x-1/2">
