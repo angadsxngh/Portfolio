@@ -31,7 +31,7 @@ function AboutSection() {
   return (
     <div
       id="about"
-      className="min-h-screen py-40 px-32 bg-black text-center  justify-center text-white"
+      className="min-h-screen py-32 px-32 bg-black text-center  justify-center text-white"
     >
       <div className="flex flex-col justify-center items-center py-8">
         <AuroraText className='text-xl'>A GLIMPSE INTO MY WORLD</AuroraText>

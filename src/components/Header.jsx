@@ -13,8 +13,8 @@ function Header() {
         <div className="absolute mb-3 left-1/2 transform -translate-x-1/2">
           <ul className="flex flex-row gap-6">
             <li className='cursor-pointer hover:text-black hover:bg-white text-white hover:rounded px-2 py-1 rounded-lg font-semibold'><a href="#about">About</a></li>
-            <li className='cursor-pointer hover:text-black hover:bg-white text-white hover:rounded px-2 py-1 rounded-lg font-semibold'>Projects</li>
-            <li className='cursor-pointer hover:text-black hover:bg-white text-white hover:rounded px-2 py-1 rounded-lg font-semibold'>Contact</li>
+            <li className='cursor-pointer hover:text-black hover:bg-white text-white hover:rounded px-2 py-1 rounded-lg font-semibold'><a href="#projects">Projects</a></li>
+            <li className='cursor-pointer hover:text-black hover:bg-white text-white hover:rounded px-2 py-1 rounded-lg font-semibold'><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
