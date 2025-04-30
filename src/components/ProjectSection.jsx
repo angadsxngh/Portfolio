@@ -7,19 +7,22 @@ import { ExternalLink, Github } from "lucide-react";
 
 function ProjectSection() {
   return (
-    <div id="projects" className="py-32 pb-32 bg-black text-white items-center text-center">
-      <div className="">
+    <div
+      id="projects"
+      className="py-32 pb-32 bg-black text-white items-center text-center px-6 sm:px-10 md:px-16"
+    >
+      <div className="mb-12">
         <AuroraText className="text-xl pb-4">Real World Results</AuroraText>
       </div>
-      <div className="pb-20"> 
+      <div className="pb-20">
         <HyperText>PROJECTS</HyperText>
-        <h1 className="text-xl font-semibold">
+        <h1 className="text-xl sm:text-2xl font-semibold">
           Check out how I transformed ideas into engaging experiences
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 md:px-24">
-        {[
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        {[ 
           {
             title: "Singhstagram",
             img: "https://raw.githubusercontent.com/angadsxngh/Portfolio/refs/heads/master/public/images/singhstagram-landing-page.png",
@@ -48,15 +51,15 @@ function ProjectSection() {
                 <p className="text-sm uppercase tracking-wide text-pink-400 font-semibold">
                   Featured Project
                 </p>
-                <h4 className="text-2xl font-bold mt-1">{project.title}</h4>
+                <h4 className="text-2xl sm:text-3xl font-bold mt-1">{project.title}</h4>
                 <small className="text-sm text-gray-400 mt-1">
                   {project.desc}
                 </small>
-                <div className="flex flex-row gap-3">
-                  <a href={project.link} target="_blank">
+                <div className="flex flex-row gap-3 mt-4">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-4 pt-2" />
                   </a>
-                  <a href={project.github} target="_blank">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <Github className="w-4 pt-2"/>
                   </a>
                 </div>

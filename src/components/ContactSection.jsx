@@ -20,6 +20,8 @@ function ContactSection() {
     email: "",
     phone: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState("");
 
   const handleChange = (e) => {
     setFormDetails({
@@ -30,6 +32,15 @@ function ContactSection() {
 
   const handleClick = (e) => {
     e.preventDefault();
+
+    // Validation: Ensure fields are filled
+    if (!formDetails.name || !formDetails.email || !formDetails.phone) {
+      setFormError("All fields are required.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setFormError(""); // Reset any previous errors
 
     emailjs
       .send(
@@ -43,7 +54,15 @@ function ContactSection() {
         },
         "6ssgJVXEGqGuPK9IH"
       )
-      .then(() => notyf.success("Details sent successfully"));
+      .then(() => {
+        notyf.success("Details sent successfully");
+        setFormDetails({ name: "", email: "", phone: "" }); // Reset form
+        setIsSubmitting(false);
+      })
+      .catch((error) => {
+        notyf.error("Error sending details, please try again.");
+        setIsSubmitting(false);
+      });
 
     emailjs.send(
       "service_yb9p0ti",
@@ -81,6 +100,9 @@ function ContactSection() {
           </CardHeader>
           <CardContent>
             <form onSubmit={handleClick} className="grid gap-4">
+              {formError && (
+                <div className="text-red-500 text-sm mb-4">{formError}</div>
+              )}
               <div className="grid gap-2">
                 <Input
                   onChange={handleChange}
@@ -118,8 +140,9 @@ function ContactSection() {
                 <Button
                   type="submit"
                   className="w-full sm:w-auto mx-auto text-center"
+                  disabled={isSubmitting} // Disable button while submitting
                 >
-                  Get in Touch!
+                  {isSubmitting ? "Sending..." : "Get in Touch!"}
                 </Button>
               </CardFooter>
             </form>
