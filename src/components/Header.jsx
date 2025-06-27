@@ -34,7 +34,7 @@ function Header() {
         <div className="flex items-center gap-4 z-10">
           {/* Desktop Resume */}
           <a
-            href="https://drive.google.com/file/d/1BUWDcXWSnaQzPo9sb5YJccevdDCMwO4N/view"
+            href="https://drive.google.com/file/d/1VFN_AYUeNlgkAuwP4IQL-vYNoYHm2s0-/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block"

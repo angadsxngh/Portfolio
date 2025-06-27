@@ -34,7 +34,7 @@ function ProjectSection() {
             title: "RentEase",
             img: "https://raw.githubusercontent.com/angadsxngh/Portfolio/refs/heads/master/public/images/rentease-landing-page.png",
             desc: "A medium through which Landlords and Tenants can manage their finances",
-            link: "https://github.com/angadsxngh/rent-management-frontend",
+            link: "https://go-rentease.vercel.app",
             github: "https://github.com/angadsxngh/rent-management-backend"
           },
         ].map((project, index) => (
