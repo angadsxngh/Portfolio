@@ -13,7 +13,7 @@ function Header() {
         {/* Logo */}
         <div className="z-10">
           <img
-            src="https://raw.githubusercontent.com/angadsxngh/Portfolio/refs/heads/master/public/images/HeaderLogo.png"
+            src="https://raw.githubusercontent.com/angadsxngh/Portfolio/refs/heads/master/public/images/Angad%20Singh.png"
             alt="LOGO"
             className="h-8 w-auto"
           />
