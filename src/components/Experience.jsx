@@ -21,7 +21,7 @@ function ExperienceSection() {
       <Timeline.Item>
         <Timeline.Content flex="1" />
         <Timeline.Connector>
-          <Timeline.Separator border={"gray 1px solid"} h={"200px"}/>
+          <Timeline.Separator border={"gray 1px solid"} h={{ base: "400px", md: "200px" }}/>
           <Timeline.Indicator />
         </Timeline.Connector>
         <Timeline.Content flex="1"> 
@@ -39,8 +39,7 @@ function ExperienceSection() {
           <Text textStyle="sm" textAlign={"right"}>Worked on server deployment and cybersecurity initiatives, including setting up Moodle on XAMPP, assisting with penetration testing, and implementing DMARC for email security. Built dashboards to monitor domain compliance while gaining hands-on experience in deployment, databases, and security best practices.</Text>
         </Timeline.Content>
         <Timeline.Connector>
-          <Timeline.Separator border={"gray 1px solid"} height={"200px"}/>
-          <Timeline.Separator />
+          <Timeline.Separator border={"gray 1px solid"} h={{ base: "480px", md: "200px" }}/>
           <Timeline.Indicator />  
         </Timeline.Connector>
         <Timeline.Content flex="1" />
@@ -49,7 +48,7 @@ function ExperienceSection() {
       <Timeline.Item>
         <Timeline.Content flex="1" />
         <Timeline.Connector>
-          <Timeline.Separator border={"gray 1px solid"}/>
+          <Timeline.Separator border={"gray 1px solid"} h={{ base: "400px", md: "200px" }}/>
           <Timeline.Indicator />
         </Timeline.Connector>
         <Timeline.Content flex="1">
