@@ -21,7 +21,7 @@ function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          {["about", "projects", "contact"].map((item) => (
+          {["about", "experience", "projects", "contact"].map((item) => (
             <a key={item} href={`#${item}`}>
               <Button className="bg-transparent text-white hover:text-black hover:bg-white font-semibold px-2 py-1 rounded-lg">
                 {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -58,7 +58,7 @@ function Header() {
       {isMenuOpen && (
         <div className="md:hidden px-6 pb-4">
           <div className="flex flex-col gap-4 text-white">
-            {["about", "projects", "contact"].map((item) => (
+            {["about", "experience", "projects", "contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}

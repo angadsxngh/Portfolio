@@ -12,7 +12,7 @@ function ProjectSection() {
       className="py-32 pb-32 bg-black text-white items-center text-center px-6 sm:px-10 md:px-16"
     >
       <div className="mb-12">
-        <AuroraText className="text-xl pb-4">Real World Results</AuroraText>
+        <AuroraText className="text-xl pb-4">REAL WORLD RESULTS</AuroraText>
       </div>
       <div className="pb-20">
         <HyperText>PROJECTS</HyperText>
